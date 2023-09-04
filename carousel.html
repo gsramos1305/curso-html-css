@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1;
+        }
+
+        .carousel {
+            display: flex;
+            align-items: center;
+            gap: 86px;
+
+            background-color: green;
+            color: white;
+            margin: 100px auto;
+            width: 800px;
+            border-radius: 10px;
+            padding: 32px 48px 32px 86px;
+            /* padding-left: 86px; */
+            /* padding-right: 48px; */
+
+            position: relative;
+        }
+
+        img {
+            background-color: wheat;
+            width: 200px;
+            height: 200px;
+            transform: scale(1.5);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 15);
+            border-radius: 10px;
+        }
+
+        .text {
+            font-weight: 500;
+            line-height: 1.5;
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+
+        .author {
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .text-2 {
+            font-size: 12px;
+        }
+
+        .buttons {
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            position: absolute;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button-icon {
+            width: 24px;
+            height: 24px;
+            stroke: black;
+        }
+        
+        .button-left {
+            left: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button-right {
+            right: 0;
+            top: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .dots {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 32px);
+
+            display: flex;
+            gap: 12px;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: white;
+            border: 2px solid green;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .dot-fill {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <img src="flowers.png" alt="">
+        <blockquote class="testimonial">
+            <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, blanditiis ex soluta, nobis
+                modi dolores ut, officiis totam rem quasi"
+            </p>
+            <p class="author">
+                Fulado de Tal
+            </p>
+            <p class="text-2">
+                Escola de não sei o que
+            </p>
+        </blockquote>
+        <button class="buttons button-left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="button-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+        <button class="buttons button-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="button-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+        <div class="dots">
+            <button class="dot dot-fill">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
