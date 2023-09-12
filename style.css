@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    column-gap: 40px;
+
+    max-width: 768px;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 15px;
+    background-color: antiquewhite;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+.product-info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+.product-price {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.shipping {
+    font-size: 12px;
+    color: grey;
+}
+
+.link {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+.more-info {
+    text-decoration: none;
+}
+.arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.colors-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+}
+.box-colors {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+.box-1 {
+    background-color: red;
+}
+.box-2 {
+    background-color: blue;
+}
+.box-3 {
+    background-color: green;
+}
+.box-4 {
+    background-color: brown;
+}
+.box-5 {
+    background-color: yellow;
+}
+.box-6 {
+    background-color: deeppink;
+}
+
+.details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+.ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+
+    margin-left: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    grid-column: 1 / -1;
+
+    height: 60px;
+    color: white;
+    background-color: black;
+}
